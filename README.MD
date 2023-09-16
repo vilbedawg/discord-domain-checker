@@ -1,13 +1,11 @@
 # Domain monitor discord bot
 
-## Description
+This Discord bot is designed to monitor your Discord channel for messages containing links to any specified domains. When such a message is detected, it will promptly notify all channel members. Additionally, you have the option to receive notifications for verification purposes or any other reasons you may have.
 
-This is a simple discord bot that monitors your discord channel for messages that contains any links to the given domains. It alerts everyone on the channel if the message contains a link to any of the specified domains. Optionally, you can also send messages to you for proof or whatever.
+The bot will also issue alerts in cases where a user attempts to modify or delete their own message or tamper with the alert message itself.
 
-It also alerts if the user tries to edit or delete their own message, or if they try to tinker with the alert message itself. 
-
-### Note
-This bot was made as a joke and I dont think it has any practical use cases.
+### Important Note
+Please be aware that this bot was created as a joke, and its design and functionality reflect this intent.
 
 ## Installation
 
