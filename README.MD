@@ -21,7 +21,7 @@ Please be aware that this bot was created as a joke, and its design and function
 4. Create a .env file in the project directory and add the following environment variables:
 
    ```shell
-    DOMAINS=["foo.com", "bar.com"]
+    DOMAINS="foo.com, bar.com"
     THREAD_NAME=thread_name_for_the_bot
     YOUR_USER_ID=your_discord_user_id
     TOKEN=your_discord_bot_token

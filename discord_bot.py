@@ -11,7 +11,7 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-domains = os.getenv('DOMAINS')
+domains = (os.getenv('DOMAINS') or "").split(", ")
 thread_name = os.getenv('THREAD_NAME')
 your_user_id = int(os.getenv('YOUR_USER_ID') or 0)
 token = os.getenv('TOKEN')
@@ -122,6 +122,7 @@ async def on_message_edit(original_message, new_message):
         await user.send(f'{new_message.author.display_name} tried to edit old message the in server "{new_message.guild.name}": {original_message.content}')
 
 if token:
+    print(domains)
     client.run(token)
 else:
     print("No token found.")
